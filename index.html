@@ -1,0 +1,374 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Compare ride fares across Rapido, Uber, Ola, and Namma Yatri instantly. Save money on every ride.">
+    <title>FareCompare - Best Ride Fares Instantly</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="favicon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header id="mainHeader" class="header-transparent">
+        <nav class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="assets/logo.jpeg" alt="FareCompare Logo" class="logo" width="180" height="50">
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" role="navigation">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="nav-cta">
+                    <button class="btn-download" aria-label="Download FareCompare App">Download Now</button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero/Landing Section -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 order-md-1 order-2">
+                        <div class="hero-content">
+                            <h1 class="hero-headline">Compare Fares, Choose Smarter Rides</h1>
+                            <p class="hero-brief">Save time and money with instant fare comparison across all providers
+                            </p>
+                            <button class="btn-primary-cta">Download App Now</button>
+
+                            <!-- Provider Logos with Animation -->
+                            <div class="providers-showcase" role="region" aria-label="Supported ride providers">
+                                <p class="providers-label">We compare fares from:</p>
+                                <div class="providers-animation-container">
+                                    <div class="provider-icon" data-provider="rapido">
+                                        <img src="assets/images/rapido.svg" alt="Rapido" width="80" height="80">
+                                        <div class="best-badge" aria-label="Best fare">★</div>
+                                    </div>
+                                    <div class="provider-icon" data-provider="uber">
+                                        <img src="assets/images/uber.svg" alt="Uber" width="80" height="80">
+                                        <div class="best-badge" aria-label="Best fare">★</div>
+                                    </div>
+                                    <div class="provider-icon" data-provider="ola">
+                                        <img src="assets/images/ola.svg" alt="Ola" width="80" height="80">
+                                        <div class="best-badge" aria-label="Best fare">★</div>
+                                    </div>
+                                    <div class="provider-icon" data-provider="namma">
+                                        <img src="assets/images/nammayatri.svg" alt="Namma Yatri" width="80" height="80">
+                                        <div class="best-badge" aria-label="Best fare">★</div>
+                                    </div>
+                                    <svg class="comparison-arrows" aria-hidden="true">
+                                        <path class="arrow-path" d="M 50 50 Q 150 20, 250 50"
+                                            stroke="var(--color-primary)" fill="none" stroke-width="2" />
+                                        <path class="arrow-path" d="M 50 80 Q 150 110, 250 80"
+                                            stroke="var(--color-secondary)" fill="none" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 d-block order-1">
+                        <div class="hero-visual">
+                            <img src="assets/images/landing.png"
+                                alt="FareCompare app interface showing fare comparison" class="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section" id="about-service">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 order-md-2 order-1 order-lg-1">
+                        <img src="assets/images/about.png"
+                            alt="Person using FareCompare app to compare ride prices" class="info-image">
+                    </div>
+                    <div class="col-lg-7 col-md-12 order-1 order-lg-2">
+                        <div class="info-content">
+                            <h2 class="section-title">Your Smart Ride Companion</h2>
+                            <p class="section-description">
+                                FareCompare aggregates real-time pricing from Rapido, Uber, Ola, and Namma Yatri
+                                in seconds. No more switching between apps—get the best fare instantly and book
+                                your ride with confidence. Save up to 40% on every trip while enjoying a seamless
+                                comparison experience designed for Indian commuters.
+                            </p>
+                            <div class="info-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">2M+</div>
+                                    <div class="stat-label">Active Users</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">₹50Cr+</div>
+                                    <div class="stat-label">Saved Together</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">4.8★</div>
+                                    <div class="stat-label">User Rating</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Onboarded Apps - Infinite Scroll -->
+        <section class="partners-section" id="partners">
+            <div class="container">
+                <h2 class="section-title text-center">Trusted Partners</h2>
+                <p class="section-subtitle text-center">Comparing fares from leading ride providers</p>
+            </div>
+            <div class="infinite-scroll-container" role="region" aria-label="Partner ride services">
+                <div class="scroll-track" id="partnerScroll">
+                    <!-- First set -->
+                    <div class="partner-card">
+                        <img src="assets/images/rapido.svg" alt="Rapido" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/nammayatri.svg" alt="Namma Yatri" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/uber.svg" alt="Uber" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/ola.svg" alt="Ola" width="120" height="60">
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                  <div class="partner-card">
+                        <img src="assets/images/rapido.svg" alt="Rapido" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/nammayatri.svg" alt="Namma Yatri" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/uber.svg" alt="Uber" width="120" height="60">
+                    </div>
+                    <div class="partner-card">
+                        <img src="assets/images/ola.svg" alt="Ola" width="120" height="60">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- People's Talk - Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <h2 class="section-title text-center">What Users Say</h2>
+                <p class="section-subtitle text-center">Real reviews from App Store and Play Store</p>
+            </div>
+
+            <div class="reviews-container" role="region" aria-label="User reviews">
+                <!-- Row 1 - Left to Right -->
+                <div class="review-row" data-direction="ltr">
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Best fare comparison app! Saved me ₹200 on my daily commute. Highly
+                            recommend to everyone…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/google-play.png" alt="" width="16" height="16">
+                            <span class="review-source">Play Store</span>
+                        </div>
+                        <div class="review-full" hidden>Best fare comparison app! Saved me ₹200 on my daily commute.
+                            Highly recommend to everyone looking to save money.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Super easy to use. Shows all prices at once. No more switching between 4
+                            different apps…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/app-store.png" alt="" width="16" height="16">
+                            <span class="review-source">App Store</span>
+                        </div>
+                        <div class="review-full" hidden>Super easy to use. Shows all prices at once. No more switching
+                            between 4 different apps every single time.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="4 stars">★★★★☆</div>
+                        <p class="review-text">Great concept and execution. Helps me choose the cheapest option every
+                            time. UI is clean and fast…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/google-play.png" alt="" width="16" height="16">
+                            <span class="review-source">Play Store</span>
+                        </div>
+                        <div class="review-full" hidden>Great concept and execution. Helps me choose the cheapest option
+                            every time. UI is clean and fast loading.</div>
+                    </div>
+                </div>
+
+                <!-- Row 2 - Right to Left -->
+                <div class="review-row" data-direction="rtl">
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">This app is a game changer! I've been using it for 2 months and saved so
+                            much money. Must have…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/app-store.png" alt="" width="16" height="16">
+                            <span class="review-source">App Store</span>
+                        </div>
+                        <div class="review-full" hidden>This app is a game changer! I've been using it for 2 months and
+                            saved so much money. Must have for daily travelers.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Finally! An app that actually helps save money. Real-time prices from all
+                            apps in one place…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/google-play.png" alt="" width="16" height="16">
+                            <span class="review-source">Play Store</span>
+                        </div>
+                        <div class="review-full" hidden>Finally! An app that actually helps save money. Real-time prices
+                            from all apps in one place. Love it!</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="4 stars">★★★★☆</div>
+                        <p class="review-text">Very useful for comparing fares quickly. The interface is intuitive and
+                            loads in seconds…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/app-store.png" alt="" width="16" height="16">
+                            <span class="review-source">App Store</span>
+                        </div>
+                        <div class="review-full" hidden>Very useful for comparing fares quickly. The interface is
+                            intuitive and loads in seconds. Recommended!</div>
+                    </div>
+                </div>
+
+                <!-- Row 3 - Left to Right -->
+                <div class="review-row" data-direction="ltr">
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Awesome app for budget travelers. Shows transparent pricing without any
+                            hidden charges…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/google-play.png" alt="" width="16" height="16">
+                            <span class="review-source">Play Store</span>
+                        </div>
+                        <div class="review-full" hidden>Awesome app for budget travelers. Shows transparent pricing
+                            without any hidden charges. Five stars from me!</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Smart solution to a common problem. I use this before every ride now.
+                            Simple and effective…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/app-store.png" alt="" width="16" height="16">
+                            <span class="review-source">App Store</span>
+                        </div>
+                        <div class="review-full" hidden>Smart solution to a common problem. I use this before every ride
+                            now. Simple and effective tool for saving money.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="review-text">Perfect for daily commuters. Saves both time and money. The best ride
+                            comparison app available…</p>
+                        <div class="review-meta">
+                            <img src="assets/icons/google-play.png" alt="" width="16" height="16">
+                            <span class="review-source">Play Store</span>
+                        </div>
+                        <div class="review-full" hidden>Perfect for daily commuters. Saves both time and money. The best
+                            ride comparison app available in India right now.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2 class="cta-title">Start Saving on Every Ride</h2>
+                    <p class="cta-subtitle">Join millions of smart travelers across India</p>
+                    <button class="btn-primary-cta btn-large">Download FareCompare Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <img src="assets/logo.jpeg" alt="FareCompare" class="footer-logo" width="160" height="44">
+                    <p class="footer-tagline">Your smart ride companion for better fares</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Copyright -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" aria-label="Facebook">
+                            <img src="assets/icons/facebook.png" alt="" width="24" height="24">
+                        </a>
+                        <a href="#twitter" aria-label="Twitter">
+                            <img src="assets/icons/twitter.png" alt="" width="24" height="24">
+                        </a>
+                        <a href="#instagram" aria-label="Instagram">
+                            <img src="assets/icons/instagram.png" alt="" width="24" height="24">
+                        </a>
+                        <a href="#linkedin" aria-label="LinkedIn">
+                            <img src="assets/icons/linkedin.png" alt="" width="24" height="24">
+                        </a>
+                    </div>
+                    <p class="copyright">© 2024 FareCompare. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
